@@ -228,8 +228,3 @@ npx prisma studio
 
 
 
-```
-
-
-
-```
