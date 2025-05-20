@@ -190,10 +190,10 @@ src/routes/postman_collection.json
 
 ## 🏷️ Request Status Values
 
-* `new`
-* `in_progress`
-* `completed`
-* `cancelled`
+* `NEW`
+* `IN_PROGRESS`
+* `COMPLETED`
+* `CANCELLED`
 
 ---
 
