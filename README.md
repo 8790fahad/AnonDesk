@@ -5,8 +5,7 @@ A RESTful API built with **TypeScript**, **Express**, and **Prisma ORM** that en
 ---
 
 ## 📁 Project Structure
-
-
+```markdown
 root/
 ├── src/
 │   ├── controllers/
@@ -27,8 +26,10 @@ root/
 ├── tsconfig.json
 ├── yarn.lock
 └── README.md
+```
 
-````
+
+
 
 ---
 
