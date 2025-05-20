@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+//what do do
+// 1. change all model names to pascal case
+// BeanCake
+// All created_at should be now and updated at should be updatedAt,
+// all enums should be PascalCase also
+// all table names should be defined with small letters and capitalized where necessary.
+
+model Request {
+  id            String   @id @default(uuid())
+  subject       String
+  description   String
+  status        Status   @default(NEW)
+  solutionText  String?  // Nullable, for completed requests
+  cancelReason  String?  // Nullable, for cancelled requests
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+enum Status {
+  NEW
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}

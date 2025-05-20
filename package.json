@@ -1,0 +1,26 @@
+{
+  "name": "ano-desk-api",
+  "version": "1.0.0",
+  "description": "A backend API built with Node.js, Express, and Prisma ORM that allows users to submit anonymous service requests with statuses like \"New\", \"In Progress\", \"Completed\", or \"Cancelled\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "ts-node-dev ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "joi": "^17.13.3",
+    "moment": "^2.30.1",
+    "prisma": "^5.22.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.9",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  }
+}

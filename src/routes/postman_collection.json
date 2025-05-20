@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "0c9c3ca0-c051-4b04-8df7-aedae1693773",
+		"name": "AnoDesk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9077015",
+		"_collection_link": "https://orange-equinox-998025.postman.co/workspace/Syra~eadf288a-566c-47d5-85af-3a03c3974eed/collection/9077015-0c9c3ca0-c051-4b04-8df7-aedae1693773?action=share&source=collection_link&creator=9077015"
+	},
+	"item": [
+		{
+			"name": "Create a request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"subject\": \"Internet not working\",\n  \"description\": \"My office internet has been down since morning. Please resolve as soon as possible.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/request/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"request",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Take a request into work",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"a557508e-6425-4d9e-9533-379f183c5b20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/request/in-progress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"request",
+						"in-progress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complete the processing of a request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/request/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"request",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel a request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"a557508e-6425-4d9e-9533-379f183c5b20\", \n    \"cancelReason\": \"Issue was reported by mistake and is no longer needed.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/request/cancel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"request",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancels all requests that are currently in the \"In Progress\"",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/request/cancel-all-in-progress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"request",
+						"cancel-all-in-progress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Requests",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
