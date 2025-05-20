@@ -221,6 +221,7 @@ npx prisma studio
 
 ---
 
-> Built with ❤️ by \[Muhammad Fahad]
+> Built with ❤️ by 
+### Muhammad Fahad Ado(8790fahadado@gmail.com)
 
 
