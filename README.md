@@ -86,7 +86,7 @@ npx prisma studio
 ### 4. ▶️ Run the Server
 
 ```bash
-yarn dev
+yarn start
 ```
 
 The server runs at: [http://localhost:4001](http://localhost:4001)
