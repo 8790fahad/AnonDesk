@@ -196,7 +196,7 @@ src/routes/postman_collection.json
 
 ```bash
 # Run dev server with live reload
-yarn dev
+yarn start
 
 # Generate Prisma client
 npx prisma generate
